@@ -10,6 +10,7 @@ const looksPath = path.join(__dirname,"../template/looks");
 
 const app = express();
 app.use(express.static(looksPath))
+const port = process.env.PORT || 3000;
 
 app.set("view engine","hbs");
 app.set("views",viewsPath);
@@ -73,6 +74,6 @@ app.get("/about",(req,res)=>{
 });
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("yo running");
 })
