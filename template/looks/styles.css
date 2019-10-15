@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+    font-family: arial;
+    margin: 0 auto;
+
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1{
+    font-size: 64px;
+}
+header a{
+    color: #888888;
+    text-decoration : none;
+    text-decoration-line: underline;
+    letter-spacing: .1em;
+    padding-left: 15px;
+    
+}
+form{
+    margin-top:45px
+}
+#message{
+    margin-top:45px;
+}
+footer{
+    color:#888888;
+    border-top:1px solid #f1f1f1;
+
+}
+.main-body{
+flex-grow: 1;
+
+}
+input{
+padding:11px;
+}
+.button{
+    background:rgb(24,42,63);
+    color:#888888;
+    transition: all .5s;
+}
+.button:hover{
+    background:#888888;
+    color:rgb(24,42,63);
+    transition: all 1s;
+}
