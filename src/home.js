@@ -57,6 +57,7 @@ app.get("/weather",(req,res)=>{
                 res.send({
                    temp:data.temp,
                    precip:data.precip,
+                   summary:data.summary,
                    address: location
                })
                }

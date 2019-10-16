@@ -17,7 +17,7 @@ form.addEventListener('submit',(e)=>{
                 message.textContent=data.error
             }
             else{
-                var yo = "present temp = "+data.temp+"^C with "+data.precip+"% chance of rain"
+                var yo = data.summary+". Present temp = "+data.temp+"^C with "+data.precip+"% chance of rain"
                 message.textContent=data.address;
                 message2.textContent=yo;
   
