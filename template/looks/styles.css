@@ -10,14 +10,7 @@ body{
 h1{
     font-size: 64px;
 }
-header a{
-    color: #888888;
-    text-decoration : none;
-    text-decoration-line: underline;
-    letter-spacing: .1em;
-    padding-left: 15px;
-    
-}
+
 form{
     margin-top:45px
 }
@@ -45,4 +38,23 @@ padding:11px;
     background:#888888;
     color:rgb(24,42,63);
     transition: all 1s;
+}
+nav{
+    background: black;
+    height:50px;
+}
+ nav a{
+    float:left;
+    margin-top:15px;
+    margin-left:20px;
+    color: #888888;
+    text-decoration : none;
+    text-decoration-line: underline;
+    letter-spacing: .1em;
+
+}
+ .yo{
+    font-size:2em;
+    margin-top:5px;
+    text-decoration:none;
 }

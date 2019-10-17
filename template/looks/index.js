@@ -2,9 +2,20 @@ const form = document.querySelector('form');
 const input  = document.querySelector('input');
 const  message= document.querySelector("#message-1")
 const  message2= document.querySelector("#message-2")
+const h1 = document.querySelector("h1");
+const weather = document.querySelector("#weather");
+const about = document.querySelector("#about");
+const help = document.querySelector("#help");
 
-
-form.addEventListener('submit',(e)=>{
+if(h1.textContent=="weather"){
+    weather.classList.add("yo");
+}else if(h1.textContent=="about"){
+    about.classList.add("yo");
+}else{
+    help.classList.add("yo")
+}
+if(h1.textContent=="weather")
+{form.addEventListener('submit',(e)=>{
     e.preventDefault();
     const location = input.value;
     message.textContent="";
@@ -27,3 +38,4 @@ form.addEventListener('submit',(e)=>{
     
     })
 })
+}
